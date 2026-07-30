@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stockd - Support</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1d1d1f; background: #fff; line-height: 1.6; }
-        .container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
-        .app-header { text-align: center; margin-bottom: 48px; }
-        .app-name { font-size: 32px; font-weight: 700; margin-bottom: 4px; }
-        .app-tagline { font-size: 18px; color: #6e6e73; }
-        h2 { font-size: 22px; font-weight: 600; margin: 40px 0 16px; }
-        p { margin-bottom: 16px; color: #333; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .divider { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
-        .footer { text-align: center; color: #999; font-size: 14px; margin-top: 48px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stockd · Support</title>
+<meta name="description" content="Support and FAQ for Stockd, the grocery app whose lists sort themselves by aisle and track prices across stores. Everything runs on your device.">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FEFBF6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#18181C" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Stockd · Support">
+<meta property="og:description" content="Support and FAQ for the Stockd iOS app. Smart grocery lists, entirely on your device.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="shared.css">
+<script src="shared.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="app-header">
-            <div class="app-name">Stockd</div>
-            <div class="app-tagline">Smart Grocery List Planner</div>
-        </div>
-        <h2>Support</h2>
-        <p>Need help with Stockd? We're here to assist you.</p>
-        <p>For questions, feedback, or bug reports, please email us at:</p>
-        <p><a href="mailto:stockdapphelp@gmail.com">stockdapphelp@gmail.com</a></p>
-        <p>We typically respond within 48 hours.</p>
-        <hr class="divider">
-        <h2 id="privacy">Privacy Policy</h2>
-        <p><strong>Last updated:</strong> April 9, 2026</p>
-        <p>Stockd ("the App") is developed by SimplyMaf. Your privacy is important to us. This policy explains how we handle your information.</p>
-        <h2>Data Collection</h2>
-        <p>Stockd does <strong>not collect, store, or transmit any personal data</strong>. All your grocery lists, preferences, and app data are stored locally on your device and are never sent to any server.</p>
-        <h2>Third-Party Services</h2>
-        <p>Stockd does not use any third-party analytics, advertising, or tracking services. No data is shared with third parties.</p>
-        <h2>Data Storage</h2>
-        <p>All app data is stored locally on your device using on-device storage. If you delete the app, all associated data is permanently removed.</p>
-        <h2>Children's Privacy</h2>
-        <p>Stockd does not knowingly collect any information from children under 13. The app does not require any personal information to function.</p>
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
-        <h2>Contact</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:stockdapphelp@gmail.com">stockdapphelp@gmail.com</a>.</p>
-        <div class="footer">
-            <p>&copy; 2026 SimplyMaf. All rights reserved.</p>
-        </div>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name serif" href="#top"><img src="icon.png" alt="" width="24" height="24">Stockd<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#faq" class="collapse">FAQ</a>
+      <a href="#contact" class="collapse">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch theme" title="Theme: follows your system"><span id="themeIcon">◐</span></button>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/stockd-smart-grocery-lists/id6761667432">App&nbsp;Store</a>
     </div>
+  </div>
+</nav>
+
+<header class="wrap" id="top">
+  <span class="eyebrow">Support · Stockd for iOS</span>
+  <h1 class="serif">Grocery lists that <em>sort themselves</em>.</h1>
+  <p class="lede">Stockd sorts your list by aisle, tracks prices across stores, and can build a whole list from <strong>"taco night for 6"</strong> using Apple's on-device model — without touching a server.</p>
+  <div class="btn-row">
+    <a class="btn btn-clay" href="mailto:stockdapphelp@gmail.com">Email support</a>
+    <a class="btn btn-primary" href="https://apps.apple.com/us/app/stockd-smart-grocery-lists/id6761667432">Get it on the App&nbsp;Store</a>
+    <a class="btn btn-ghost" href="privacy.html">Privacy policy</a>
+  </div>
+  <div class="hero-note">
+    <img src="icon.png" alt="Stockd app icon" width="40" height="40">
+    <span>Questions, feedback, and bug reports usually get a reply within 48 hours.</span>
+  </div>
+</header>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">FAQ</span>
+    <h2 class="serif">Frequently asked</h2>
+    <p>The short version of how Stockd handles your lists and your data.</p>
+  </div>
+  <div class="grid" data-reveal-group>
+    <div class="card">
+      <span class="chip">Data</span>
+      <h3 class="serif">Does Stockd collect my data?</h3>
+      <p>No. Stockd does not collect, store, or transmit any personal data. Your grocery lists, preferences, and app data stay on your device and are never sent to any server.</p>
+      <a class="applink" href="privacy.html">Read the privacy policy →</a>
+    </div>
+    <div class="card">
+      <span class="chip">AI</span>
+      <h3 class="serif">Where does the AI run?</h3>
+      <p>On your iPhone. List generation uses Apple's on-device Foundation Models, so saying <b>"taco night for 6"</b> builds the whole list without an account, an API, or a network call. It works in airplane mode.</p>
+    </div>
+    <div class="card">
+      <span class="chip">Storage</span>
+      <h3 class="serif">What happens if I delete the app?</h3>
+      <p>All app data is stored locally on your device. If you delete the app, all associated data is permanently removed with it — there is no copy anywhere else.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="wrap">
+  <div class="section-head" data-reveal>
+    <span class="eyebrow">Contact</span>
+    <h2 class="serif">Need a hand?</h2>
+  </div>
+  <div class="panel" data-reveal>
+    <p><span class="pulse"></span><b>Support is one email away</b></p>
+    <p style="color:var(--ink2); max-width:68ch; margin-top:12px">For questions, feedback, or bug reports, write to <a href="mailto:stockdapphelp@gmail.com" style="color:var(--rust-deep)">stockdapphelp@gmail.com</a>. We typically respond within 48 hours.</p>
+    <p class="stamp">Made by <a href="https://simplemaf.com">SimpleMAF</a> · Updated July 2026</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 SimplyMaf · <a href="privacy.html">Privacy Policy</a></span>
+    <span class="serif" style="font-style:italic">Calm software, honestly made.</span>
+  </footer>
+</div>
 </body>
 </html>
