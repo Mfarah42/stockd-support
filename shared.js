@@ -140,3 +140,19 @@ document.documentElement.classList.add("js");
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();
+
+/* ---------- website analytics (GA4) ---------- */
+/* Counts page visits on this website only. The app contains no analytics. */
+(function () {
+  var ID = "G-7R2W4LPMZN";
+  if (!/^G-[A-Z0-9]+$/.test(ID)) return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", ID);
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ID);
+  document.head.appendChild(s);
+})();
