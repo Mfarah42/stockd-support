@@ -144,8 +144,9 @@ document.documentElement.classList.add("js");
 /* ---------- website analytics (GA4) ---------- */
 /* Counts page visits on this website only. The app contains no analytics. */
 (function () {
-  var ID = "G-7R2W4LPMZN";
+  var ID = "G-9D4DRZV075";
   if (!/^G-[A-Z0-9]+$/.test(ID)) return;
+  if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return;
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = gtag;
